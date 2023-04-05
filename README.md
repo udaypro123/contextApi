@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# About assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+this small projects bsed on context API , which purpose of clear the concept of the context API
 
-## Available Scripts
+## assignment details
+### what is contetx api
+```
+context api is functional component  hook which is used to pass data from parent to child.
 
-In the project directory, you can run:
+```
+### why we use context api
+```
+to avoid props drilling problem we use context api
 
-### `npm start`
+*** what is props Drilling
+data pass from parent to child components in hiererchal manner is called props drilling
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+we can also pass data from parent to child using props, but when app is litle big then send data might be complex and performance may occured 
+1. complexity will occur using props
+2. unnessesary data available to components which have not need 
+3. performance will going low
+```
+## Rules
+```
+1. create context
+2. Make available your context to all child components
+3. store the data in context
+4. access data to child components from context
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### complete introduction about this assignment
+```
+first of all i make a component insidethis i make a context folder,
+then i make five  component i.e Home, part1,part2,part3,part4 and part5
 
-### `npm test`
+then i create a context in context.jsx file
+and and this context availabled for my parent component and pass the data as props which predefined name is value.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+and store the data in context and which chid components of data particular data tha can access from context.
+```
